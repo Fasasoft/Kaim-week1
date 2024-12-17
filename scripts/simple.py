@@ -70,10 +70,13 @@ plt.show()
 df['month'] = df['date'].dt.to_period('M')
 monthly_counts = df['month'].value_counts().sort_index()
 
+print("\nArticles Published Over Time (Monthly):")
+print(monthly_counts)
 
 # Plot articles over time
 monthly_counts.plot(kind='line', marker='o', title='Article Publication Trend Over Time')
 plt.ylabel('Number of Articles')
 plt.xlabel('Publication Month')
 plt.show()
+
 
