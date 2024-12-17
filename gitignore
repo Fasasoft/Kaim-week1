@@ -1,0 +1,13 @@
+# Raw data
+*.csv
+*.xls
+*.xlsx
+
+# Large datasets
+data/
+.vscode/
+ # Ignore all files in .github except workflows
+.github/*
+!.github/workflows/
+__init__.py
+
